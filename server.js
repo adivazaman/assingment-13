@@ -43,8 +43,8 @@ app.post("/product", (req, res) => {
 // Login Route
 app.post("/login", (req, res) => {
   res.json({
-    username: req.headers.username,
-    password: req.headers.password
+    username: req.headers["username"],
+    password: req.headers["password"]
   });
 });
 
